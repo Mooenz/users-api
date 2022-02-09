@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <UserState>
-      <div className="container my-4">
+      <div className="container py-4 min-vh-100 position-relative">
         <div className="col-12 text-center mb-4">
           <h1 className="fw-bold">Select a Profile</h1>
           <p className="fw-light m-0">
@@ -23,11 +23,11 @@ function App() {
           <div className="col-12 col-md-6">
             <Profile />
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 mb-4">
             <UserList />
           </div>
         </div>
-        <p className='text-light text-muted text-center mt-4'>created by <span className='fw-bold'>Mooenz</span></p>
+        <p className='text-light text-muted text-center position-absolute bottom-0 start-0 end-0'>created by <span className='fw-bold'>Mooenz</span></p>
       </div>
     </UserState>
   );
